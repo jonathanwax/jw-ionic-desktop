@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 class="text-danger" id="helpHeader">Help Needed?</h1>
+    <br/>
+    <p class="text-justify">This is a sample page with ng-repeat bound to helpService via helpController (vm)</p>
+    <ul>
+        <li ng-repeat="help in vm.service.data"> {{ help.title }} - {{ help.content }}</li>
+    </ul>
+    <pre dir="ltr">HelpController: {{vm|json}}</pre>
+</div>
