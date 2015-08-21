@@ -98,8 +98,7 @@ module.exports = function (grunt) {
             main: {
                 files: [
                     {
-                        cwd: 'app',
-                        src: ['assets/**/*'],
+                        src: ['app/assets/**/*', 'data/**/*'],
                         dest: 'dist/',
                         expand: true
                     }
@@ -143,6 +142,25 @@ module.exports = function (grunt) {
                 },
                 src: 'app/index.html',
                 dest: 'dist/index.html'
+            },
+            ionic: {
+                options: {
+                    remove: ['div[ui-view]'],
+                    prepend: [
+                        {
+                            selector: 'body',
+                            html: '<ion-nav-view></ion-nav-view>'
+                        }
+                      ],
+                    append: [
+                      {
+                        selector: 'head',
+                        html: '<script src="cordova.js"></script>'
+                      }
+                    ]
+                },
+                src: 'dist/index.html',
+                dest: 'dist/index-ionic.html'
             }
         },
         cssmin: {
@@ -165,6 +183,9 @@ module.exports = function (grunt) {
         },
         uglify: {
             main: {
+              options:{
+                sourceMap: true
+              },
                 src: 'temp/app.full.js',
                 dest: 'dist/app.full.min.js'
             }
@@ -241,6 +262,7 @@ module.exports = function (grunt) {
 
     });
 
+    grunt.registerTask('build-ionic', ['jshint', 'clean:before', 'less', 'dom_munger', 'ngtemplates', 'cssmin', 'concat', 'ngAnnotate', 'uglify', 'copy', 'htmlmin', 'dom_munger:ionic', 'clean:after']);
     grunt.registerTask('build', ['jshint', 'clean:before', 'less', 'dom_munger', 'ngtemplates', 'cssmin', 'concat', 'ngAnnotate', 'uglify', 'copy', 'htmlmin', 'clean:after']);
     grunt.registerTask('run', ['dom_munger:read', 'jshint', 'connect', 'watch']);
     grunt.registerTask('test', ['dom_munger:read', 'karma']);

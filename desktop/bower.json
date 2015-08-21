@@ -1,28 +1,28 @@
 {
-    "name": "app",
-    "version": "0.0.1",
-    "main": "app/index.html",
-    "ignore": [
+  "name": "app",
+  "version": "0.0.1",
+  "main": "app/index.html",
+  "ignore": [
     "**/.*",
     "node_modules",
     "bower_components"
   ],
-    "dependencies": {
-        "jquery": "~2.1.1",
-        "underscore": "~1.7.0",
-        "bootstrap": "~3.3.0",
-        "angular": "~1.3.2",
-        "angular-ui-router": "~0.2.11",
-        "angular-animate": "~1.3.2",
-        "angular-resource": "~1.3.2",
-        "angular-cookies": "~1.3.2",
-        "angular-mocks": "~1.3.2",
-        "angular-ui-utils": "~0.1.1",
-        "angular-bootstrap": "~0.11.2",
-        "moment": "~2.5",
-        "less.js": "~1.7.5",
-        "font-awesome": "~4.2.0",
-        "angular-loading-bar": "~0.6.0"
-    }
-
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0",
+    "bootstrap": "~3.3.0",
+    "angular": "~1.3.2",
+    "angular-ui-router": "~0.2.11",
+    "angular-animate": "~1.3.2",
+    "angular-resource": "~1.3.2",
+    "angular-cookies": "~1.3.2",
+    "angular-mocks": "~1.3.2",
+    "angular-ui-utils": "~0.1.1",
+    "angular-bootstrap": "~0.11.2",
+    "moment": "~2.5",
+    "less.js": "~1.7.5",
+    "font-awesome": "~4.2.0",
+    "angular-loading-bar": "~0.6.0",
+    "ionic": "~1.1.0"
+  }
 }
