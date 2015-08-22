@@ -6,7 +6,7 @@
     /**
      * ShellController Object/function
      */
-    function ShellController(commonDeviceService) {
+    function ShellController() {
 
         // vm (view-model) is the object we bind to (this controller).
         var vm = this;
@@ -21,7 +21,6 @@
 
         /****************** PUBLIC *******************/
         vm.model = _model;
-        vm.deviceService = commonDeviceService;
 
     }
 
