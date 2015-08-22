@@ -98,8 +98,7 @@ module.exports = function (grunt) {
             main: {
                 files: [
                     {
-                        cwd: 'app',
-                        src: ['assets/**/*'],
+                        src: ['app/assets/**/*', 'data/**/*', 'fonts/**/*'],
                         dest: 'dist/',
                         expand: true
                     }
