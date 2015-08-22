@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('shell', []);
+        .module('shell', ['common']);
 
     angular
         .module('shell')
