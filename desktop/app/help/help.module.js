@@ -12,8 +12,7 @@
                 views: {
                     'contentView': {
                         templateUrl: 'help/templates/help-template.html',
-                        controller: 'helpController',
-                        controllerAs: 'vm'
+                        controller: 'helpController as vm'
                     }
                 }
             });

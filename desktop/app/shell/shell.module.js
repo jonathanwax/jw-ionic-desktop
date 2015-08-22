@@ -13,8 +13,7 @@
                 views: {
                     '': {
                         templateUrl: 'shell/templates/shell.html',
-                        controller: 'shellController',
-                        controllerAs: 'vm'
+                        controller: 'shellController as vm'
                     }
                 }
             });

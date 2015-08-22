@@ -12,6 +12,7 @@
 
     <div ui-view>
         <!-- Content loads here -->
+        <ion-nav-view></ion-nav-view>
     </div>
 
     <!-- Scripts for development only (stripped during dist build) -->
@@ -28,6 +29,7 @@
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
     <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
     <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="../bower_components/angular-ui-utils/ui-utils.js"></script>
     <script src="../bower_components/angular-loading-bar/build/loading-bar.js"></script>
@@ -43,6 +45,8 @@
     <script src="common/common.module.js"></script>
     <script src="common/controllers/common-controller.js"></script>
     <script src="common/services/common-service.js"></script>
+    <script src="common/services/common.device.service.js"></script>
+    <script src="common/directives/common.device/common.device.directive.js"></script>
 
     <script src="shell/shell.module.js"></script>
     <script src="shell/controllers/shell.controller.js"></script>
@@ -55,8 +59,6 @@
     <script src="help/controllers/help-controller.js"></script>
     <script src="help/services/help-service.js"></script>
 
-    <script src="common/services/common.device.service.js"></script>
-    <script src="common/directives/common.device/common.device.directive.js"></script>
     <!-- Add New Component JS Above -->
 
 

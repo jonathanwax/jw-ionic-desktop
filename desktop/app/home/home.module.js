@@ -12,8 +12,7 @@
                 views: {
                     'contentView': {
                         templateUrl: 'home/templates/home-template.html',
-                        controller: 'homeController',
-                        controllerAs: 'vm'
+                        controller: 'homeController as vm'
                     }
                 }
 

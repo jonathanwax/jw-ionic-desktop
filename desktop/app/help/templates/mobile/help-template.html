@@ -1,0 +1,10 @@
+<ion-view view-title="Help">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="help in vm.service.data">
+                {{ help.title }} - {{ help.content }}
+            </ion-item>
+        </ion-list>
+        <pre dir="ltr">HelpController: {{vm|json}}</pre>
+    </ion-content>
+</ion-view>
