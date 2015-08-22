@@ -104,7 +104,17 @@ module.exports = function (grunt) {
                     }
           /*{src: ['bower_components/font-awesome/fonts/**'], dest: 'dist/',filter:'isFile',expand:true},
           {src: ['bower_components/bootstrap/fonts/**'], dest: 'dist/',filter:'isFile',expand:true}*/
-        ]
+                ]
+            },
+            ionic: {
+                files: [
+                    {
+                        cwd: 'dist/',
+                        src: '**',
+                        dest: '../ionic/www/',
+                        expand: true
+                    }
+                ]
             }
         },
         dom_munger: {
@@ -243,6 +253,7 @@ module.exports = function (grunt) {
 
     });
 
+    grunt.registerTask('deploy', ['copy:ionic']);
     grunt.registerTask('build', ['jshint', 'clean:before', 'less', 'dom_munger', 'ngtemplates', 'cssmin', 'concat', 'ngAnnotate', 'uglify', 'copy', 'htmlmin', 'clean:after']);
     grunt.registerTask('run', ['dom_munger:read', 'jshint', 'connect', 'watch']);
     grunt.registerTask('test', ['dom_munger:read', 'karma']);
