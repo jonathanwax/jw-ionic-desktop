@@ -164,6 +164,9 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
+            options: {
+                mangle: false
+            },
             main: {
                 src: 'temp/app.full.js',
                 dest: 'dist/app.full.min.js'
