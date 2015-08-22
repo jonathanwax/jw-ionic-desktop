@@ -160,7 +160,7 @@ module.exports = function (grunt) {
                     ]
                 },
                 src: 'dist/index.html',
-                dest: 'dist/index-ionic.html'
+                dest: 'dist/index.html'
             }
         },
         cssmin: {

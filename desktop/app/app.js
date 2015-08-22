@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('app', ['common', 'shell', 'home', 'help']);
+    angular.module('app', ['common', 'shell', 'home', 'help', 'test']);
 
     // CONFIG: App (module)
     angular
