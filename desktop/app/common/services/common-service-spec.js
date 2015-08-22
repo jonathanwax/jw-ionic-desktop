@@ -15,7 +15,7 @@
 
         it('should ...', function () {
 
-            expect(service.doSomething()).toBeDefined();
+            expect(service.doSomething).toBeDefined();
 
         });
 

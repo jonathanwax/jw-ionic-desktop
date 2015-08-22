@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('home', []);
+    angular.module('home', ['common']);
 
     angular
         .module('home')

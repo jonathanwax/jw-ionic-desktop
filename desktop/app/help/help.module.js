@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('help', []);
+    angular.module('help', ['common']);
 
     angular
         .module('help')

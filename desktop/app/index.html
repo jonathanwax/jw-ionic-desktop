@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="app.less" type="text/css" rel="stylesheet/less" />
+
+    <!-- this will give 404 in browser -->
+    <script src="cordova.js"></script>
 </head>
 
 <body>
 
     <div ui-view>
         <!-- Content loads here -->
-        <ion-nav-view></ion-nav-view>
     </div>
 
     <!-- Scripts for development only (stripped during dist build) -->
